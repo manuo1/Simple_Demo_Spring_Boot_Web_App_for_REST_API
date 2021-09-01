@@ -2,7 +2,7 @@
 # **Essais hors formation avec spring BOOT **
 
 
-# **Utilisation Spring Boot pour appli Web qui interoge une API REST**
+# **Utilisation Spring Boot pour appli Web qui interroge une API REST**
 	API REST ici : https://github.com/manuo1/Simple_Demo_Spring_Boot_REST_API
 
 ## Utilisé :
