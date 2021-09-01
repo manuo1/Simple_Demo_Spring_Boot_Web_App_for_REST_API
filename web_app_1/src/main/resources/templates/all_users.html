@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhml" xmlns:th="http://www.thymeleaf.org">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Web App 1 - Users</title>
+    </head>
+    <body>
+        <h2 class="h2">Users list</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>First name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:if="${userslist.empty}">
+                    <td colspan="3">No Users in database</td>
+                </tr>
+                <tr th:each="user: ${userslist}">
+                    <td><span th:text="${user.firstName}"> First Name </span></td>
+                    <td><span th:text="${user.lastName}"> Last Name </span></td>
+                    <td><span th:text="${user.mail}"> Email </span></td>
+                    <td><span th:text="${user.password}"> Password </span></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
